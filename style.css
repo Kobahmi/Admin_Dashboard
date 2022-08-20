@@ -1,0 +1,362 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+    font-family: 'DynaPuff', cursive;
+}
+
+.grid-container {
+display: grid;
+grid-template-columns: 0.7fr 4fr;
+text-align: center;
+height: 100vh;
+}
+
+
+.left-screen {
+background-color: #f2c5fc;
+}
+
+.dashboard-container {
+display: grid;
+grid-template-columns: 1fr 3fr;
+grid-template-rows: 1.5fr 1fr repeat(6, 1fr) 1fr repeat(3, 1fr) 5fr;
+background-color: #f2c5fc;
+text-align: left;
+column-gap: 1rem;
+padding: 25px;
+}
+
+.dashboard-container img {
+margin: 15px;
+width: 30px;
+justify-self: start;
+align-self: center;
+}
+
+.dashboard-container .dashboard {
+    padding: 15px;
+    align-self: center;
+    justify-self: start;
+    font-weight: lighter;
+}
+
+.right-screen {
+display: grid;
+grid-template-rows: repeat(2, 120px) 4fr;
+}
+
+.header-container {
+grid-row: 1/3;
+display: grid;
+grid-template-columns: 3fr 1.5fr;
+background-color: rgb(255, 214, 250);
+}
+
+.left-header {
+display: grid;
+grid-template-rows: 1fr 1fr;
+}
+
+.left-header-up {
+display: grid;
+grid-template-columns: 0.5fr 5fr;
+}
+
+.left-header-up .submit {
+height: 30px;
+width: 30px;
+align-self: center;
+justify-self: end;
+background-color: rgb(255, 214, 250);
+}
+
+.left-header-up .search-bar {
+height: 30px;
+width: 600px;
+align-self: center;
+justify-self: start;
+border-radius: 20px;
+border-style: solid;
+margin-left: 10px;
+}
+
+.left-header-down {
+display: grid;
+grid-template-columns: 1fr 4fr;
+grid-template-rows: 0.5fr 0.5fr;
+}
+
+
+.left-header-down .profile-hello {
+align-self: end;
+justify-self: start;
+}
+
+.left-header-down h3{
+grid-row: 2/3;
+align-self: start;
+justify-self: start;
+}
+
+
+.right-header {
+display: grid;
+grid-template-rows: 1fr 1fr;
+}
+
+.right-header a {
+align-self: center;
+}
+
+.right-header img {
+    height: 80px;
+    width: 80px;
+    border-radius: 70px;
+}
+
+.right-header .btns {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+align-items: center;
+justify-items: center;
+}
+
+.right-header #butt {
+border: none;
+background-color: #edb9f8;
+width: 100px;
+height: 40px;
+border-radius: 20px;
+font-family:'DynaPuff', cursive;
+}
+
+.btns .one {
+justify-self: end;
+}
+
+.btns .three {
+justify-self: start;
+}
+
+.right-header .notification {
+display: grid;
+grid-template-columns: 1fr 1.5fr 3fr;
+}
+
+.right-header .profile-name {
+align-self: center;
+justify-self: start;
+margin: 15px;
+}
+
+#bell {
+    width: 30px;
+    height: 30px;
+    align-self: center;
+    justify-self: end;
+    }
+
+.left-header img {
+    height: 100px;
+    width: 100px;
+    border-radius: 70px;
+    margin-right: 10px;
+    justify-self: center;
+    align-self: center;
+}
+
+.left-header a {
+    display: grid;
+    grid-row: 1/3;
+}
+
+
+.left-header-up button {
+border: none;
+background-color: white;
+}
+
+#search {
+width: 30px;
+height: 30px;
+}
+
+button {
+cursor: pointer;
+}
+
+
+.bottom-right-screen-container {
+grid-row: 3/4;
+display: grid;
+grid-template-columns: 2.5fr 1fr;
+grid-template-rows: 0.5fr 6fr 0.5fr 6fr;
+grid-gap: 15px;
+padding-top: 10px;
+padding-bottom: 25px;
+padding-left: 25px;
+padding-right: 25px;
+background-color: #ffe9fd;
+}
+
+
+.bottom-right-screen-container .flower-showcase {
+grid-row: 1/2;
+grid-column: 1/2;
+justify-self: start;
+align-self: end;
+}
+
+
+.bottom-right-screen-container img {
+height: 220px;
+width: 270px;
+border-radius: 50px 20px;
+}
+
+.showcase-container {
+grid-row: 2/5;
+grid-column: 1/2;
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+grid-auto-rows: 300px;
+grid-gap: 15px;
+
+}
+
+.flower-box {
+background-color: white;
+padding: 10px;
+border-left: solid 10px rgb(255, 151, 168);
+border-radius: 10px;
+display: grid;
+grid-template-rows: 1fr 4fr 2fr;
+box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 0.1px rgb(0, 0, 0),
+0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+.flower-box .flower-name {
+align-self: center;
+justify-self: center;
+padding-bottom: 5px;
+}
+
+.flower-box .flower {
+justify-self: center;
+}
+
+.flower-box .icons {
+grid-row: 3/4;
+grid-column: 1/2;
+display: grid;
+grid-template-columns: 2fr 1.5fr;
+}
+
+.icons img {
+width: 30px;
+height: 30px;
+}
+
+.icons-container {
+padding-right: 15px;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+justify-content: space-between;
+align-self: end;
+}
+
+
+.flower-of-day-title {
+justify-self: start;
+align-self: end;
+grid-column: 2/3;
+grid-row: 1/2;
+}
+
+.flower-of-day-container {
+grid-column: 2/3;
+grid-row: 2/3;
+background-color: white;
+border-radius: 10px;
+padding: 20px;
+box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 0.1px rgb(0, 0, 0),
+0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+.flower-of-day-container img {
+height: 350px;
+width: 300px;
+border-radius: 50px 50px;
+}
+
+.flower-of-day-text {
+padding-top: 15px;
+}
+
+.trending-container-title {
+justify-self: start;
+align-self: flex-end;
+grid-row: 3/4;
+grid-column: 2/3;
+}
+
+.trending-flowers {
+grid-column: 2/3;
+grid-column: 4/5;
+background-color: white;
+border-radius: 10px;
+padding: 15px;
+display: grid;
+grid-template-columns: 1fr 2fr;
+grid-template-rows: repeat(4, 1fr);
+box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 0.1px rgb(0, 0, 0),
+0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+.side-flower-container {
+grid-row: 1/5;
+grid-column: 1/2;
+}
+
+.side-text-container {
+grid-row: 1/5;
+grid-column: 2/3;
+display: grid;
+grid-template-rows: 4;
+}
+
+.side-text {
+align-self: center;
+justify-self: start;
+padding-left: 15px;
+font-size:large;
+}
+
+.side-flower img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    margin: 5px;
+    align-self: center;
+justify-self: end;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
